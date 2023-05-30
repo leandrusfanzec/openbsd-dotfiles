@@ -1,0 +1,100 @@
+# Configuración de CWM
+# Leandrus Fanzec
+# Fecha: 29 de mayo 2023
+
+# Comportamiento General
+# Automatically add new windows to the current group
+sticky yes
+# snap windows to edges at 10 pixels distance
+snapdist 0
+# leave a gap for xclock
+gap 0 0 0 0
+
+# Groups
+#  - Estructura:
+#  	* [1] = Editor
+#  	* [2] = Explorar/Manuales
+#  	* [3] = Lector
+#  	* [7] = Buscar Video/Musica
+#  	* [8] = Mpv
+#  	* [9] = Internet Browser
+#  	---------------------------
+
+autogroup 1 emacs-28-2,Emacs-28.2
+autogroup 2 Alacritty
+autogroup 2 man
+autogroup 3 mupdf
+autogroup 7 musica
+autogroup 7 video
+autogroup 8 mpv
+autogroup 9 Navigator,firefox-default
+autogroup 0 xclock,XClock
+
+# No selecciona xclock
+ignore xclock
+
+# Aspecto
+fontname "Hack:pixelsize=12"
+borderwidth 1
+color activeborder "#000000"
+
+# Atajos de Teclado
+# mod + $N = show only windows for group $N
+# (you can think of this as switching to virtual desktop $N)
+bind-key 4-1 group-only-1
+bind-key 4-2 group-only-2
+bind-key 4-3 group-only-3
+bind-key 4-4 group-only-4
+bind-key 4-5 group-only-5
+bind-key 4-6 group-only-6
+bind-key 4-7 group-only-7
+bind-key 4-8 group-only-8
+bind-key 4-9 group-only-9
+# mod + shift +$N = move window to group $N
+bind-key 4S-1 window-movetogroup-1
+bind-key 4S-2 window-movetogroup-2
+bind-key 4S-3 window-movetogroup-3
+bind-key 4S-4 window-movetogroup-4
+bind-key 4S-5 window-movetogroup-5
+bind-key 4S-6 window-movetogroup-6
+bind-key 4S-7 window-movetogroup-7
+bind-key 4S-8 window-movetogroup-8
+bind-key 4S-9 window-movetogroup-9
+# mod + right arrow = cycle through the window groups
+# (you can think of this as switching to the next virtual desktop)
+bind-key 4-l group-cycle
+# mod + left arrow = same thing in reverse
+bind-key 4-h group-rcycle
+
+# Resize windows mouse bind
+bind-mouse M-3 window-resize
+
+# Lanzadores
+unbind-key C-slash
+bind-key 4-p menu-cmd
+bind-key 4-w firefox
+bind-key 4-e "emacsclient -c"
+bind-key 4-t "/home/sleandrus/.cargo/bin/alacritty -e top"
+bind-key 4S-o Public/scr/rep
+
+# Menu Aplicaciones
+# - Miscelanea
+command term "/home/sleandrus/.cargo/bin/alacritty"
+command Lib-Absopenbsd "mupdf Public/docs/libros/computador/absopenbsd.pdf"
+command Lib-Unixtextp "mupdf Public/docs/libros/computador/unixeditorprocesor.pdf"
+command Musica "/home/sleandrus/.cargo/bin/alacritty -T ytfzf_musica --class musica -e ytfzf -sm"
+command Video "/home/sleandrus/.cargo/bin/alacritty -T ytfzf_video --class video -e ytfzf --video-pref=720 -s"
+command Normfox "firefox -P norm"
+# - Ajustes
+command CWMConfig "emacsclient -c .cwmrc"
+command XSESSION "emacsclient -c .xsession"
+command Xresources "emacsclient -c .Xresources"
+command Man-CWM "/home/sleandrus/.cargo/bin/alacritty -T man_cwm --class man -e man cwm"
+command Man-CWMRC "/home/sleandrus/.cargo/bin/alacritty -T man_cwmrc --class man -e man cwmrc"
+command Man-MDOC "/home/sleandrus/.cargo/bin/alacritty -T man_mdoc --class man -e man mdoc"
+command Man-MANDOC "/home/sleandrus/.cargo/bin/alacritty -T man_mandoc --class man -e man mandoc"
+# - Funciones
+command Nightswitch Public/scr/nightswith
+command Apagar Public/scr/apagar
+command Reiniciar Public/scr/reiniciar
+command WiFi "doas ifconfig iwn0 nwid Cel wpakey lukashenko"
