@@ -3,6 +3,13 @@
 
 
 ---------------
+Light theme:
+
+[[file:~/Public/img/os/openbsd-leandrus.png]]
+
+Dark theme:
+
+[[file:~/Public/img/os/openbsd-cwm-r2f2.png]]
 
 
 * Instalación
@@ -155,7 +162,7 @@ contenidos en este repositorio.
 El usuario debe instalar los siguientes paquetes:
 
 #+begin_src bash
-  doas pkg_add git ffmpeg mpv mupdf emacs redshift firefox unzip rust
+  doas pkg_add git ffmpeg mpv mupdf emacs redshift firefox unzip rust maim
 #+end_src
 
 Para instalar alacritty:
