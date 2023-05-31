@@ -5,12 +5,11 @@
 ---------------
 Light theme:
 
-[[file:~/Public/img/os/openbsd-leandrus.png]]
+[[file:openbsd-leandrus.png]]
 
 Dark theme:
 
-[[file:~/Public/img/os/openbsd-cwm-r2f2.png]]
-
+[[file:openbsd-cwm-r2f2.png]]
 
 * Instalación
 
