@@ -1,6 +1,6 @@
 # Configuración de CWM
 # Leandrus Fanzec
-# Fecha: 29 de mayo 2023
+# Fecha: 31 de mayo 2023
 
 # Comportamiento General
 # Automatically add new windows to the current group
@@ -26,6 +26,7 @@ autogroup 2 man
 autogroup 3 mupdf
 autogroup 7 musica
 autogroup 7 video
+autogroup 8 SDL_App,SDL_App
 autogroup 8 mpv
 autogroup 9 Navigator,firefox-default
 autogroup 0 xclock,XClock
@@ -36,7 +37,7 @@ ignore xclock
 # Aspecto
 fontname "Hack:pixelsize=12"
 borderwidth 1
-color activeborder "#000000"
+color activeborder "#ffffff"
 
 # Atajos de Teclado
 # mod + $N = show only windows for group $N
@@ -69,31 +70,42 @@ bind-key 4-h group-rcycle
 # Resize windows mouse bind
 bind-mouse M-3 window-resize
 
+# Posibles conflictos Emacs
+unbind-key M-Return
+unbind-key M-Down
+unbind-key M-Up
+unbind-key M-Left
+unbind-key M-Right
+
 # Lanzadores
 unbind-key C-slash
 bind-key 4-p menu-cmd
+bind-key Print Public/scr/print
+bind-key S-Print Public/scr/printsel
 bind-key 4-w firefox
+bind-key 4S-w "firefox -P norm"
 bind-key 4-e "emacsclient -c"
-bind-key 4-t "/home/sleandrus/.cargo/bin/alacritty -e top"
+bind-key 4-t "/home/leandrus/.cargo/bin/alacritty -e top"
 bind-key 4S-o Public/scr/rep
 
 # Menu Aplicaciones
 # - Miscelanea
-command term "/home/sleandrus/.cargo/bin/alacritty"
+command term "/home/leandrus/.cargo/bin/alacritty"
 command Lib-Absopenbsd "mupdf Public/docs/libros/computador/absopenbsd.pdf"
 command Lib-Unixtextp "mupdf Public/docs/libros/computador/unixeditorprocesor.pdf"
-command Musica "/home/sleandrus/.cargo/bin/alacritty -T ytfzf_musica --class musica -e ytfzf -sm"
-command Video "/home/sleandrus/.cargo/bin/alacritty -T ytfzf_video --class video -e ytfzf --video-pref=720 -s"
-command Normfox "firefox -P norm"
+command Musica "/home/leandrus/.cargo/bin/alacritty -T ytfzf_musica --class musica -e ytfzf -sm"
+command Video "/home/leandrus/.cargo/bin/alacritty -T ytfzf_video --class video -e ytfzf --video-pref=720 -s"
+command Normfox 
 # - Ajustes
 command CWMConfig "emacsclient -c .cwmrc"
 command XSESSION "emacsclient -c .xsession"
 command Xresources "emacsclient -c .Xresources"
-command Man-CWM "/home/sleandrus/.cargo/bin/alacritty -T man_cwm --class man -e man cwm"
-command Man-CWMRC "/home/sleandrus/.cargo/bin/alacritty -T man_cwmrc --class man -e man cwmrc"
-command Man-MDOC "/home/sleandrus/.cargo/bin/alacritty -T man_mdoc --class man -e man mdoc"
-command Man-MANDOC "/home/sleandrus/.cargo/bin/alacritty -T man_mandoc --class man -e man mandoc"
+command Man-CWM "/home/leandrus/.cargo/bin/alacritty -T man_cwm --class man -e man cwm"
+command Man-CWMRC "/home/leandrus/.cargo/bin/alacritty -T man_cwmrc --class man -e man cwmrc"
+command Man-MDOC "/home/leandrus/.cargo/bin/alacritty -T man_mdoc --class man -e man mdoc"
+command Man-MANDOC "/home/leandrus/.cargo/bin/alacritty -T man_mandoc --class man -e man mandoc"
 # - Funciones
+command Giting Public/scr/giting
 command Nightswitch Public/scr/nightswith
 command Apagar Public/scr/apagar
 command Reiniciar Public/scr/reiniciar

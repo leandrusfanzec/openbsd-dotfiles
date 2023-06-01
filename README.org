@@ -161,7 +161,8 @@ contenidos en este repositorio.
 El usuario debe instalar los siguientes paquetes:
 
 #+begin_src bash
-  doas pkg_add git ffmpeg mpv mupdf emacs redshift firefox unzip rust maim
+  doas pkg_add git ffmpeg mpv mupdf emacs redshift firefox unzip rust
+  maim rsync links
 #+end_src
 
 Para instalar alacritty:
