@@ -37,7 +37,7 @@ ignore xclock
 # Aspecto
 fontname "Hack:pixelsize=12"
 borderwidth 1
-color activeborder "#ffffff"
+color activeborder "#000000"
 
 # Atajos de Teclado
 # mod + $N = show only windows for group $N

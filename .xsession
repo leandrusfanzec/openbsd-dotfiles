@@ -17,6 +17,9 @@ LANG= xclock -strftime "%a %e %b %Y %H:%M" &
 # disable system beep
 xset b off
 
+# Don't suspend display
+xset s off -dpms
+
 # if you have a ThinkPad, the following lines enable TrackPoint
 # scrolling by dragging with the middle button.
 xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation" 1 
