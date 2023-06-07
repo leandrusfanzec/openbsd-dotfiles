@@ -26,7 +26,6 @@ xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation" 1
 xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Button" 2 
 xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Axes" 6 7 4 5 
 
-
 redshift -l -33.45694:-70.64827 -t 5700:2600 -b 1.0:0.7 -g 0.9 -m randr -v &
 xset r rate 300 50 &
 syncthing &
@@ -35,9 +34,8 @@ emacs-28.2 --daemon &
 # use caps lock as ctrl key
 setxkbmap -layout us -variant intl -option ctrl:nocaps
 
-
-
-
+# Don't generate .core files
+ulimit -Sc 0
 
 # start cwm!
 exec cwm
