@@ -13,8 +13,9 @@ gap 0 0 0 0
 # Groups
 #  - Estructura:
 #  	* [1] = Editor
-#  	* [2] = Explorar/Manuales
-#  	* [3] = Lector
+#  	* [2] = Terminal
+#  	* [3] = Explorar
+#  	* [4] = Visualizar Documentos
 #  	* [7] = Buscar Video/Musica
 #  	* [8] = Mpv
 #  	* [9] = Internet Browser
@@ -23,7 +24,8 @@ gap 0 0 0 0
 autogroup 1 emacs-28-2,Emacs-28.2
 autogroup 2 Alacritty
 autogroup 2 man
-autogroup 3 mupdf
+autogroup 3 xfe,Xfe
+autogroup 4 mupdf,MuPDF
 autogroup 7 musica
 autogroup 7 video
 autogroup 8 SDL_App,SDL_App
@@ -82,11 +84,14 @@ unbind-key C-slash
 bind-key 4-p menu-cmd
 bind-key Print Public/scr/print
 bind-key S-Print Public/scr/printsel
+bind-key 4S-Print Public/scr/screencast
+bind-key 4-f xfe
 bind-key 4-w firefox
 bind-key 4S-w "firefox -P norm"
 bind-key 4-e "emacsclient -c"
 bind-key 4-t "/home/leandrus/.cargo/bin/alacritty -e top"
 bind-key 4S-o Public/scr/rep
+
 
 # Menu Aplicaciones
 # - Miscelanea
@@ -107,6 +112,7 @@ command Man-MANDOC "/home/leandrus/.cargo/bin/alacritty -T man_mandoc --class ma
 # - Funciones
 command Giting Public/scr/giting
 command Nightswitch Public/scr/nightswith
+command Lightswitch Public/scr/lightswith
 command Apagar Public/scr/apagar
 command Reiniciar Public/scr/reiniciar
 command WiFi "doas ifconfig iwn0 nwid Cel wpakey lukashenko"
