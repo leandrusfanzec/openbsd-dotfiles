@@ -162,7 +162,7 @@ El usuario debe instalar los siguientes paquetes:
 
 #+begin_src bash
   doas pkg_add git ffmpeg mpv mupdf emacs redshift firefox unzip rust
-  maim rsync links
+  maim rsync unclutter
 #+end_src
 
 Para instalar alacritty:
