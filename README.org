@@ -116,7 +116,7 @@ Luego, se debe modificar las propiedades de ese grupo en el path
       :tc=default:
 #+end_src
 
-También se debe cambiar las propiedades en el path "/etc/sysctl.conf":
+También se debe cambiar las propiedades en el path "/etc/sysctl.conf"[fn:1]:
 
 #+begin_src bash
   # shared memory limits (chrome needs a ton)
@@ -162,7 +162,7 @@ El usuario debe instalar los siguientes paquetes:
 
 #+begin_src bash
   doas pkg_add git ffmpeg mpv mupdf emacs redshift firefox unzip rust
-  maim rsync unclutter
+  rsync unclutter
 #+end_src
 
 Para instalar alacritty:
@@ -172,3 +172,8 @@ Para instalar alacritty:
 #+end_src
 
 Para finalizar se debe instalar la configuración de [[https://github.com/leandrusfanzec/emacs-leandrus][Emacs]].
+
+* Footnotes
+
+[fn:1] Estos valores, como lo [[https://www.c0ffee.net/blog/openbsd-on-a-laptop#updates][indica el artículo]], están calculados en
+base a 16GB.
