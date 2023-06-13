@@ -116,7 +116,7 @@ Luego, se debe modificar las propiedades de ese grupo en el path
       :tc=default:
 #+end_src
 
-También se debe cambiar las propiedades en el path "/etc/sysctl.conf"[fn:1]:
+También se debe cambiar las propiedades en el path "/etc/sysctl.conf" [fn:1]:
 
 #+begin_src bash
   # shared memory limits (chrome needs a ton)
