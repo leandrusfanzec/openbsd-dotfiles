@@ -477,37 +477,51 @@ shell/i/.svg
 ### Sound files ###
 
 regex/i/\.(wav|snd|voc|au|smp|aiff|snd|m4a|ape|aac|wv)$
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open common
-	View=%view{ascii} /usr/local/libexec/mc/ext.d/sound.sh view common
+	Include=audio
 
 regex/i/\.(mod|s3m|xm|it|mtm|669|stm|ult|far)$
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open mod
+	Include=audio
 
 shell/i/.waw22
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open wav22
+	Include=audio
 
 shell/i/.mp3
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open mp3
-	View=%view{ascii} /usr/local/libexec/mc/ext.d/sound.sh view mp3
+	Include=audio
+
 
 regex/i/\.og[gax]$
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open ogg
-	View=%view{ascii} /usr/local/libexec/mc/ext.d/sound.sh view ogg
+	Include=audio
+
 
 shell/i/.opus
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open opus
-	View=%view{ascii} /usr/local/libexec/mc/ext.d/sound.sh view opus
+	Include=audio
 
 regex/i/\.(spx|flac)$
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open common
+	Include=audio
 
 regex/i/\.(midi?|rmid?)$
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open midi
+	Include=audio
+
+regex/i/\.(mod|s3m|xm|it|mtm|669|stm|ult|far)$
+	Include=audio
+
+shell/i/.waw22
+	Include=audio
+
+shell/i/.mp3
+	Include=audio
+
+regex/i/\.og[gax]$
+	Include=audio
+
+shell/i/.opus
+	Include=audio
+
+regex/i/\.(spx|flac)$
+	Include=audio
 
 shell/i/.wma
-	Open=/usr/local/libexec/mc/ext.d/sound.sh open wma
-	View=%view{ascii} /usr/local/libexec/mc/ext.d/sound.sh view wma
-
+	Include=audio
 
 ### Play lists ###
 
@@ -826,30 +840,24 @@ type/^Parity\ Archive\ Volume\ Set
 # includes should be at end of bindings
 
 include/editor
-	Open=(emacsclient -c %f)
+	Open=emacsclient -c %f
 
 include/image
-	Open=(mupdf -r % %f &)
-	View=(mupdf -r % %f &)
-	#Open=/usr/local/libexec/mc/ext.d/image.sh open ALL_FORMATS
-	#View=%view{ascii} /usr/local/libexec/mc/ext.d/image.sh view ALL_FORMATS
+	Open=mupdf  %f &
+	View=mupdf  %f &
 
 include/video
-	Open=(mpv --player-operation-mode=pseudo-gui %s &)
-	View=(mpv --player-operation-mode=pseudo-gui %s &)
-	#Open=/usr/local/libexec/mc/ext.d/video.sh open ALL_FORMATS
-	#View=%view{ascii} /usr/local/libexec/mc/ext.d/video.sh view ALL_FORMATS
+	Open=mpv --player-operation-mode=pseudo-gui %f &
+	View=mpv --player-operation-mode=pseudo-gui %f &
 
 include/audio
-	Open=(mpv --player-operation-mode=pseudo-gui %s &)
-	View=(mpv --player-operation-mode=pseudo-gui %s &)
+	Open=mpv --player-operation-mode=pseudo-gui %f &
+	View=mpv --player-operation-mode=pseudo-gui %f &
 
 ### Default ###
 
 # Default target for anything not described above
 default/*
-	Open=
-	View=
 
 
 ### EOF ###
