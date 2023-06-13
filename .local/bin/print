@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Mero utilitario para hacer un pantallazo simple.
+
+import -window root Public/img/screen/$(date +%s).png 

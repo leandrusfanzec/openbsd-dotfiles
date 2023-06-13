@@ -1,0 +1,15 @@
+#!/bin/sh
+
+id="$(pgrep cwm)"
+
+# Para los demás terminales:
+# xrdb /home/leandrus/.config/nightxresources ;
+# Para alacritty:
+sed -i -e "s/github_light/monokai_charcoal/" $HOME/.config/alacritty/alacritty.yml ;
+
+xsetroot -bitmap $HOME/Public/img/os/bitN ;
+
+sed -i -e "s/000000/ffffff/" $HOME/.cwmrc ;
+
+kill -s SIGHUP $id
+
