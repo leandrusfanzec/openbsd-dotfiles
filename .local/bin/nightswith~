@@ -7,7 +7,7 @@ id="$(pgrep cwm)"
 # Para alacritty:
 sed -i -e "s/github_light/monokai_charcoal/" $HOME/.config/alacritty/alacritty.yml ;
 
-xsetroot -bitmap $HOME/.config/bitN ;
+xsetroot -bitmap $HOME/.config/athemes/bitN ;
 
 sed -i -e "s/000000/ffffff/" $HOME/.cwmrc ;
 
