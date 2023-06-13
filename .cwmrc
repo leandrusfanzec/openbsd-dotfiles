@@ -85,15 +85,15 @@ unbind-key M-Right
 # Lanzadores
 unbind-key C-slash
 bind-key 4-p menu-cmd
-bind-key Print .local/bin/print
-bind-key S-Print .local/bin/printsel
-bind-key 4S-Print .local/bin/screencast
+bind-key Print ".local/bin/print"
+bind-key S-Print ".local/bin/printsel"
+bind-key 4S-Print ".local/bin/screencast"
 bind-key 4-f xfe
 bind-key 4-w firefox
 bind-key 4S-w "firefox -P norm"
 bind-key 4-e "emacsclient -c"
 bind-key 4-t ".cargo/bin/alacritty -e top"
-bind-key 4S-o .local/bin/rep
+bind-key 4S-o ".local/bin/rep"
 
 # Menu Aplicaciones
 #----------------------
