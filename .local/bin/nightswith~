@@ -11,5 +11,7 @@ xsetroot -bitmap $HOME/.config/athemes/bitN ;
 
 sed -i -e "s/000000/ffffff/" $HOME/.cwmrc ;
 
+sed -i -e "s/sand256/modarin256root-defbg/" $HOME/.config/mc/ini ;
+
 kill -s SIGHUP $id
 

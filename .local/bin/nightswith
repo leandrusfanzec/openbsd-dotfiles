@@ -5,13 +5,13 @@ id="$(pgrep cwm)"
 # Para los demás terminales:
 # xrdb /home/leandrus/.config/nightxresources ;
 # Para alacritty:
-sed -i -e "s/github_light/monokai_charcoal/" $HOME/.config/alacritty/alacritty.yml ;
+sed -i -e "s/github_light/monokai_charcoal/" $HOME/.config/alacritty/alacritty.yml
 
-xsetroot -bitmap $HOME/.config/athemes/bitN ;
+xsetroot -bitmap $HOME/.config/athemes/bitN 
 
-sed -i -e "s/000000/ffffff/" $HOME/.cwmrc ;
+sed -i -e "s/000000/ffffff/" $HOME/.cwmrc 
 
-sed -i -e "s/sand256/modarin256root-defbg/" $HOME/.config/mc/ini ;
+sed -i -e "s/sand256/modarin256root-defbg/" $HOME/.config/mc/ini 
 
 kill -s SIGHUP $id
 

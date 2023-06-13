@@ -4,4 +4,6 @@ sed -i -e s/ffffff/000000/ $HOME/.cwmrc ;
 
 sed -i -e "s/monokai_charcoal/github_light/" $HOME/.config/alacritty/alacritty.yml ;
 
+sed -i -e "s/modarin256root-defbg/sand256/" $HOME/.config/mc/ini ;
+
 doas reboot
