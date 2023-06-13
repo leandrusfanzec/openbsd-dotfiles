@@ -35,12 +35,9 @@ autogroup 8 SDL_App,SDL_App
 autogroup 8 mpv
 autogroup 9 Navigator,firefox-default
 autogroup 0 xclock,XClock
-autogroup 0 screenkey
-
 
 # No selecciona xclock
 ignore xclock
-ignore screenkey
 
 # Aspecto
 fontname "Hack:pixelsize=12"
