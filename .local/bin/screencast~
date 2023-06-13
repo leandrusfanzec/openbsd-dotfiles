@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# Path utilizado personalmente.
 # Recuerde habilitar:
 # doas sysctl kern.audio.record=1
 # doas sysctl kern.video.record=1
