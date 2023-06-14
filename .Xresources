@@ -8,14 +8,6 @@ Xft.rgba      : rgb
 ! fixed is the one true font - use iso10646 for unicode characters
 *font         : Cascadia Code PL:size=14
 
-! ===== xidle
-! drag pointer to lower left corner to lock screen
-XIdle*position : sw
-! and leave it there for one second.
-XIdle*delay    : 1
-! also lock screen after 5 minutes idle
-XIdle*timeout  : 300
-
 ! ===== xclock
 ! digital clock in lower right-hand corner
 XClock*analog      : false
@@ -28,30 +20,6 @@ XClock*height      : 12
 XClock*background  : white
 XClock*foreground  : black
 XClock*borderWidth : 0
-
-! ===== xterm
-! zenburn theme - http://kippura.org/zenburnpage
-XTerm*background     : #3f3f3f
-XTerm*foreground     : #dcdccc
-XTerm*cursorColor    : #aaaaaa
-XTerm*colorUL        : #366060
-XTerm*underlineColor : #dfaf8f
-XTerm*color0         : #3f3f3f
-XTerm*color1         : #cc9393
-XTerm*color2         : #7f9f7f
-XTerm*color3         : #d0bf8f
-XTerm*color4         : #6ca0a3
-XTerm*color5         : #dc8cc3
-XTerm*color6         : #93e0e3
-XTerm*color7         : #dcdccc
-XTerm*color8         : #000000
-XTerm*color9         : #dca3a3
-XTerm*color10        : #bfebbf
-XTerm*color11        : #f0dfaf
-XTerm*color12        : #8cd0d3
-XTerm*color13        : #dc8cc3
-XTerm*color14        : #93e0e3
-XTerm*color15        : #ffffff
 
 ! remove the additional black border
 XTerm*borderWidth            : 0
