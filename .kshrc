@@ -1,13 +1,13 @@
 export EDITOR=mg
-export REFER=/var/syncthing/Public/ref
 export LANG=es_CL.UTF-8
 export LC_CTYPE=es_CL.UTF-8
 export CLICOLOR=1
 HISTFILE=$HOME/.ksh_history
 HISTSIZE=20000
 
-export PATH=$PATH:/home/sleandrus/.cargo/bin
-export PATH=$PATH:/home/sleandrus/Public/scr
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/Public/scr
 
 alias ll='ls -l'
 alias la='ls -lA'
@@ -16,6 +16,7 @@ alias ...='cd ...'
 alias mkd='mkdir -p'
 alias df='df -h'
 alias du='du -ch'
+alias sk='screenkey --mods-mode emacs -f "Cascadia Code PL extralight" -p fixed -g 30%x10%+68%-88%'
 alias e='$EDITOR'
 alias tp='top -b -o res | sed "/load/ d; /CPU/ d; /process/ d; /smtpd/ d"'
 
