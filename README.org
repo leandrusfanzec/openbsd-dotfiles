@@ -80,9 +80,9 @@ Para esto debemos editar el archivo "/etc/wsconsctl.conf":
 Configurar los permisos de doas, en "/etc/doas.conf":
 
 #+begin_src bash
-  permit persist keepenv leandrus
-  permit nopass leandrus cmd reboot
-  permit nopass leandrus cmd halt
+  permit persist keepenv NAMEUSER
+  permit nopass NAMEUSER cmd reboot
+  permit nopass NAMEUSER cmd halt
 #+end_src
 
 Configurar administración de energia:
@@ -161,8 +161,8 @@ contenidos en este repositorio.
 El usuario debe instalar los siguientes paquetes:
 
 #+begin_src bash
-  doas pkg_add git ffmpeg mpv mupdf emacs redshift firefox unzip rust
-  rsync unclutter
+  doas pkg_add git ffmpeg mpv zathura nsxiv emacs redshift firefox unzip
+  rust rsync unclutter mc
 #+end_src
 
 Para instalar alacritty:
