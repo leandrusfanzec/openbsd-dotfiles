@@ -1,17 +1,25 @@
 #!/bin/sh
+# Uso: cambia tema a light
 
-id="$(pgrep cwm)"
 
-# Para los demás terminales:
-# xrdb /home/leandrus/.config/nightxresources ;
-# Para alacritty:
-sed -i -e "s/monokai_charcoal/github_light/" $HOME/.config/alacritty/alacritty.yml 
+in=$(pgrep cwm)
 
-xsetroot -bitmap $HOME/.config/athemes/bitD 
+m=$(pgrep mc)
 
-sed -i -e "s/ffffff/000000/" $HOME/.cwmrc 
+sed -i -e "s/monokai_charcoal/github_light/" $HOME/.config/alacritty/alacritty.yml ;
 
-sed -i -e "s/modarin256root-defbg/sand256/" $HOME/.config/mc/ini 
+xsetroot -bitmap $HOME/.config/athemes/bitD ;
 
-kill -s SIGHUP $id
+sed -i -e "s/ffffff/000000/" $HOME/.cwmrc ;
+
+sed -i -e "s/set recolor true/#set recolor true/" $HOME/.config/zathura/zathurarc ;
+
+sed -i -e "s/Arc-Dark-solid/Arc-solid/" $HOME/.config/gtk-3.0/settings.ini ;
+
+kill -SIGHUP $m ;
+
+sed -i -e "s/modarin256root-defbg/sand256/" $HOME/.config/mc/ini ;
+
+kill -SIGHUP $in
+
 

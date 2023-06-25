@@ -1,0 +1,9 @@
+[Default Applications]
+image/jpeg=nsxiv.desktop
+image/png=nsxiv.desktop
+application/pdf=org.pwmt.zathura.desktop
+
+[Added Associations]
+image/jpeg=nsxiv.desktop;
+image/png=nsxiv.desktop;
+application/pdf=org.pwmt.zathura.desktop;

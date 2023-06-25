@@ -1,17 +1,23 @@
 #!/bin/sh
+# Uso: cambia tema para dark
 
-id="$(pgrep cwm)"
+in=$(pgrep cwm)
 
-# Para los demás terminales:
-# xrdb /home/leandrus/.config/nightxresources ;
-# Para alacritty:
-sed -i -e "s/github_light/monokai_charcoal/" $HOME/.config/alacritty/alacritty.yml
+m=$(pgrep mc)
 
-xsetroot -bitmap $HOME/.config/athemes/bitN 
+sed -i -e "s/github_light/monokai_charcoal/" $HOME/.config/alacritty/alacritty.yml ;
 
-sed -i -e "s/000000/ffffff/" $HOME/.cwmrc 
+xsetroot -bitmap $HOME/.config/athemes/bitN ;
 
-sed -i -e "s/sand256/modarin256root-defbg/" $HOME/.config/mc/ini 
+sed -i -e "s/000000/ffffff/" $HOME/.cwmrc ;
 
-kill -s SIGHUP $id
+sed -i -e "s/#set recolor true/set recolor true/" $HOME/.config/zathura/zathurarc ;
+
+sed -i -e "s/Arc-solid/Arc-Dark-solid/" $HOME/.config/gtk-3.0/settings.ini ;
+
+kill -SIGHUP $m ;
+
+sed -i -e "s/sand256/modarin256root-defbg/" $HOME/.config/mc/ini ;
+
+kill -SIGHUP $in
 

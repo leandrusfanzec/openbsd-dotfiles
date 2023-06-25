@@ -1,0 +1,5 @@
+#!/bin/sh
+
+in=$( xclip -o )
+
+yt-dlp "$in" -o - | ffplay - -autoexit -loglevel quiet -hide_banner 

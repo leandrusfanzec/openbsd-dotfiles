@@ -1,17 +1,21 @@
 #!/bin/sh
+# Uso: cambia tema
+# TODO: falta incluir thunar
 
-id="$(pgrep cwm)"
-
-# Para los demás terminales:
-# xrdb /home/leandrus/.config/nightxresources ;
-# Para alacritty:
 sed -i -e "s/monokai_charcoal/github_light/" $HOME/.config/alacritty/alacritty.yml ;
 
 xsetroot -bitmap $HOME/.config/athemes/bitD ;
 
 sed -i -e "s/ffffff/000000/" $HOME/.cwmrc ;
 
+sed -i -e "s/set recolor true/#set recolor true/" $HOME/.config/zathura/zathurarc ;
+
+sed -i -e "s/Arc-Dark-solid/Arc-solid/" $HOME/.config/gtk-3.0/settings.ini ;
+
+pkill -SIGHUP -a  mc ;
+
 sed -i -e "s/modarin256root-defbg/sand256/" $HOME/.config/mc/ini ;
 
-kill -s SIGHUP $id
+pkill -SIGHUP -a cwm
+
 

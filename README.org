@@ -116,3 +116,12 @@ Para instalar alacritty:
 #+end_src
 
 Para finalizar se debe instalar la configuración de [[https://github.com/leandrusfanzec/emacs-leandrus][Emacs]].
+
+Para evitar problemas con yt-dlp [[https://github.com/yt-dlp/yt-dlp/wiki/Installation][instalamos la versión más actualizada]]
+con:
+
+#+begin_src bash
+  python3 -m pip install -U pip setuptools wheel
+
+  python3 -m pip install --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
+#+end_src

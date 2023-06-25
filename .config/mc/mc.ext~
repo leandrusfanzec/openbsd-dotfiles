@@ -588,8 +588,8 @@ type/^PostScript
 
 # PDF
 type/^PDF
-	Open=mupdf %f &
-	View=mupdf %f &
+	Open=(zathura --fork %f)
+	View=(zathura --fork %f)
 
 # html
 regex/i/\.html?$
@@ -840,19 +840,19 @@ type/^Parity\ Archive\ Volume\ Set
 # includes should be at end of bindings
 
 include/editor
-	Open=emacsclient -c %f
+	Open=(emacsclient -c %f &)
 
 include/image
-	Open=mupdf  %f &
-	View=mupdf  %f &
+	Open=(nsxiv -b %f &)
+	View=(nsxiv -b %f &)
 
 include/video
-	Open=mpv %f &
-	View=mpv %f &
+	Open=(mpv --player-operation-mode=pseudo-gui %f &)
+	View=(mpv --player-operation-mode=pseudo-gui %f &)
 
 include/audio
-	Open=mpv --player-operation-mode=pseudo-gui %f &
-	View=mpv --player-operation-mode=pseudo-gui %f &
+	Open=(mpv --player-operation-mode=pseudo-gui %f &)
+	View=(mpv --player-operation-mode=pseudo-gui %f &)
 
 ### Default ###
 

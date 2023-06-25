@@ -4,6 +4,12 @@ sed -i -e s/ffffff/000000/ $HOME/.cwmrc ;
 
 sed -i -e "s/monokai_charcoal/github_light/" $HOME/.config/alacritty/alacritty.yml ;
 
+sed -i -e "s/set recolor true/#set recolor true/" $HOME/.config/zathura/zathurarc ;
+
+sed -i -e "s/Greybird-dark/Greybird/" $HOME/.config/gtk-3.0/settings.ini ;
+
+sed -i -e "s/elementary-xfce-dark/elementary-xfce/" $HOME/.config/gtk-3.0/settings.ini ;
+
 sed -i -e "s/modarin256root-defbg/sand256/" $HOME/.config/mc/ini ;
 
 doas reboot
