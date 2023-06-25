@@ -49,8 +49,8 @@ no tenga que hacerlo de forma constante debemos ir al path
   up powersave
 #+end_src
 
-En dicha página también nos ofrece la posibilidad de probar si esta
-configuración está correcta a través de:
+En dicha página también nos ofrece la /posibilidad de probar/
+(opcional) si esta configuración está correcta a través de:
 
 #+begin_src bash
   ifconfig em0 down
@@ -66,15 +66,6 @@ Retirar la ventana de xconsole de la pantalla de login:
 #+begin_src bash
   sed -i 's/xconsole/#xconsole/' /etc/X11/xenodm/Xsetup_0
   echo 'xset b off' >> /etc/X11/xenodm/Xsetup_0
-#+end_src
-
-Quitar el sonido "beep":
-
-Para esto debemos editar el archivo "/etc/wsconsctl.conf":
-
-#+begin_src bash
-  keyboard.bell.volume=0
-  keyboard.map+="keysym Caps_Lock = Control_L"
 #+end_src
 
 Configurar los permisos de doas, en "/etc/doas.conf":
@@ -93,68 +84,21 @@ Configurar administración de energia:
   rcctl start apmd
 #+end_src
 
-Cambiar el grupo del usuario:
+Respecto a la grabación de audio en mi Thinkpad T420 lo modifico para:
 
 #+begin_src bash
-  usermod -G staff YOUR_USERNAME
+record.adc-0:1_source=mic3
 #+end_src
 
-Luego, se debe modificar las propiedades de ese grupo en el path
-"/etc/login.conf":
+Lo anterior varía completamente respecto del equipo, sin embargo una
+manera de saber cuál es la opción correcta podemos intentar con:
 
 #+begin_src bash
-  staff:\
-      :datasize-cur=1024M:\
-      :datasize-max=8192M:\
-      :maxproc-cur=512:\
-      :maxproc-max=1024:\
-      :openfiles-cur=4096:\
-      :openfiles-max=8192:\
-      :stacksize-cur=32M:\
-      :ignorenologin:\
-      :requirehome@:\
-      :tc=default:
-#+end_src
+# mixerctl record.adc-0:1_source=toggle
+#+end_src 
 
-También se debe cambiar las propiedades en el path "/etc/sysctl.conf" [fn:1]:
-
-#+begin_src bash
-  # shared memory limits (chrome needs a ton)
-  kern.shminfo.shmall=3145728
-  kern.shminfo.shmmax=2147483647
-  kern.shminfo.shmmni=1024
-
-  # semaphores
-  kern.shminfo.shmseg=1024
-  kern.seminfo.semmns=4096
-  kern.seminfo.semmni=1024
-
-  kern.maxproc=32768
-  kern.maxfiles=65535
-  kern.bufcachepercent=90
-  kern.maxvnodes=262144
-  kern.somaxconn=2048
-#+end_src
-
-Después de eso, cambiar las opciones de montaje en el path
-"/etc/fstab", agregando las opciones "softdep,noatime" en el siguiente
-sentido (lo que aparece abajo es un mero *ejemplo ilustrativo*):
-
-#+begin_src bash
-  0364c44477d30004.b none swap sw
-  0364c44477d30004.a / ffs rw,softdep,noatime 1 1
-  0364c44477d30004.l /home ffs rw,softdep,noatime,nodev,nosuid 1 2
-  0364c44477d30004.d /tmp ffs rw,softdep,noatime,nodev,nosuid 1 2
-  0364c44477d30004.f /usr ffs rw,softdep,noatime,nodev 1 2
-  0364c44477d30004.g /usr/X11R6 ffs rw,softdep,noatime,nodev 1 2
-  0364c44477d30004.h /usr/local ffs rw,softdep,noatime,wxallowed,nodev 1 2
-  0364c44477d30004.k /usr/obj ffs rw,softdep,noatime,nodev,nosuid 1 2
-  0364c44477d30004.j /usr/src ffs rw,softdep,noatime,nodev,nosuid 1 2
-  0364c44477d30004.e /var ffs rw,softdep,noatime,nodev,nosuid 1 2
-#+end_src
-
-Al finalizar este proceso, el usuario debe descargar los ficheros
-contenidos en este repositorio.
+Lo que modificará la entrada de dispositivo de audio para la captura
+de audio, con esto, se puede ir [[https://www.openbsd.org/faq/faq13.html][probando con aucat]].
 
 * Dependencias
 
@@ -172,8 +116,3 @@ Para instalar alacritty:
 #+end_src
 
 Para finalizar se debe instalar la configuración de [[https://github.com/leandrusfanzec/emacs-leandrus][Emacs]].
-
-* Footnotes
-
-[fn:1] Estos valores, como lo [[https://www.c0ffee.net/blog/openbsd-on-a-laptop#updates][indica el artículo]], están calculados en
-base a 16GB.
