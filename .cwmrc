@@ -1,11 +1,11 @@
 # Configuración de CWM
 # Leandrus Fanzec
-# Fecha: 12 de jun 2023
+# Fecha: 25 de jun 2023
 
 # Comportamiento General
 # Automatically add new windows to the current group
 sticky yes
-# snap windows to edges at 10 pixels distance
+# snap windows edges distance
 snapdist 0
 # leave a gap for xclock
 gap 0 0 0 0
@@ -23,17 +23,17 @@ gap 0 0 0 0
 #  	---------------------------
 
 autogroup 1 Alacritty
-autogroup 2 mupdf,MuPDF
+autogroup 2 org.pwmt.zathura,Zathura
 autogroup 3 emacs-28-2,Emacs-28.2
 autogroup 4 audacity,Audacity
 autogroup 4 inkscape,Inkscape
 autogroup 5 kdenlive,kdenlive
-autogroup 5 xfe,Xfe
+autogroup 5 thunar,Thunar
 autogroup 7 musica
 autogroup 7 video
 autogroup 8 SDL_App,SDL_App
 autogroup 8 mpv
-autogroup 9 Navigator,firefox-default
+autogroup 9 Navigator,firefox-esr-default
 autogroup 0 xclock,XClock
 
 # No selecciona xclock
@@ -88,9 +88,10 @@ bind-key 4-p menu-cmd
 bind-key Print ".local/bin/print"
 bind-key S-Print ".local/bin/printsel"
 bind-key 4S-Print ".local/bin/screencast"
-bind-key 4-f xfe
-bind-key 4-w firefox
-bind-key 4S-w "firefox -P norm"
+bind-key 4-f thunar
+bind-key 4-m ".cargo/bin/alacritty -e cmixer"
+bind-key 4-w firefox-esr
+bind-key 4S-w "firefox-esr -P norm"
 bind-key 4-e "emacsclient -c"
 bind-key 4-t ".cargo/bin/alacritty -e top"
 bind-key 4S-o ".local/bin/rep"

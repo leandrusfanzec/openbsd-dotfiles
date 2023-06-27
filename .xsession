@@ -28,7 +28,7 @@ xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Axes" 6 7 4 5
 
 redshift -l -33.45694:-70.64827 -t 5700:2600 -b 1.0:0.7 -g 0.9 -m randr -v &
 xset r rate 300 50 &
-#syncthing &
+syncthing &
 unclutter &
 emacs-28.2 --daemon &
 
@@ -38,5 +38,9 @@ setxkbmap -layout us -variant intl -option ctrl:nocaps
 # Don't generate .core files
 ulimit -Sc 0
 
+xmessage -center "Hola. Bienvenido al sistema operativo OpenBSD."
+
 # start cwm!
 exec cwm
+
+

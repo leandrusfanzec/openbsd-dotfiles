@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#mpv $( xclip -o )
+# mpv $( xclip -o )
 
 in=$( xclip -o )
 
