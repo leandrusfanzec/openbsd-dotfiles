@@ -87,14 +87,14 @@ Configurar administración de energia:
 Respecto a la grabación de audio en mi Thinkpad T420 lo modifico para:
 
 #+begin_src bash
-record.adc-0:1_source=mic3
+  record.adc-0:1_source=mic3
 #+end_src
 
 Lo anterior varía completamente respecto del equipo, sin embargo una
 manera de saber cuál es la opción correcta podemos intentar con:
 
 #+begin_src bash
-# mixerctl record.adc-0:1_source=toggle
+  # mixerctl record.adc-0:1_source=toggle
 #+end_src 
 
 Lo que modificará la entrada de dispositivo de audio para la captura
@@ -105,9 +105,11 @@ de audio, con esto, se puede ir [[https://www.openbsd.org/faq/faq13.html][proban
 El usuario debe instalar los siguientes paquetes:
 
 #+begin_src bash
-  doas pkg_add git ffmpeg mpv zathura nsxiv emacs redshift firefox unzip
-  rust rsync unclutter mc
+  doas pkg_add git ffmpeg mpv zathura-pdf-poppler nsxiv emacs redshift
+  firefox unzip rust rsync unclutter mc
 #+end_src
+
+Consultar pkg.txt.
 
 Para instalar alacritty:
 

@@ -104,7 +104,7 @@ command Musica ".cargo/bin/alacritty -T ytfzf_musica --class musica -e ytfzf -sm
 command Video ".cargo/bin/alacritty -T ytfzf_video --class video -e ytfzf --video-pref=720 -s"
 
 # - Funciones
-command Giting Public/scr/giting
+command Giting ".cargo/bin/alacritty -e Public/scr/giting"
 command Nightswitch ".local/bin/nightswith"
 command Lightswitch ".local/bin/lightswith"
 command Apagar ".local/bin/apagar"
