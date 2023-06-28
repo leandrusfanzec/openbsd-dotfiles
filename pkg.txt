@@ -111,6 +111,7 @@ harfbuzz-7.1.0      text shaping library
 harfbuzz-icu-7.1.0  ICU support for libharfbuzz
 hicolor-icon-theme-0.17 fallback theme of the icon theme specification
 highway-1.0.3       length-agnostic SIMD with runtime dispatch
+hugo-0.111.3-extended fast and flexible static site generator
 hunspell-1.7.2      spelling, stemming, morphological analysis and generation
 hyphen-2.8.8        text hyphenation library
 icu4c-72.1v0        International Components for Unicode
@@ -226,6 +227,7 @@ libreoffice-7.5.1.2v0 multi-platform productivity suite
 libreoffice-i18n-es-7.5.1.2v0 es language pack for LibreOffice
 librsvg-2.54.5p2    SAX-based render library for SVG files
 libsamplerate-0.2.2p0 audio sample rate conversion library
+libsass-3.6.5v0     C/C++ implementation of a Sass compiler
 libsecret-0.20.5p1  library for storing and retrieving passwords and secrets
 libshout-2.4.5      library for communicating with an icecast server
 libsigc++-2.12.0    callback framework for C++
