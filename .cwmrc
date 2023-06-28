@@ -42,7 +42,7 @@ ignore xclock
 # Aspecto
 fontname "Hack:pixelsize=12"
 borderwidth 1
-color activeborder "#ffffff"
+color activeborder "#000000"
 
 # Atajos de Teclado
 # mod + $N = show only windows for group $N
@@ -90,7 +90,7 @@ bind-key S-Print ".local/bin/printsel"
 bind-key 4S-Print ".local/bin/screencast"
 bind-key 4-f thunar
 bind-key 4-m ".cargo/bin/alacritty -e cmixer"
-bind-key 4-w firefox-esr
+bind-key 4-w "firefox-esr -P leandrus"
 bind-key 4S-w "firefox-esr -P norm"
 bind-key 4-e "emacsclient -c"
 bind-key 4-t ".cargo/bin/alacritty -e top"

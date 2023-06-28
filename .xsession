@@ -38,7 +38,7 @@ setxkbmap -layout us -variant intl -option ctrl:nocaps
 # Don't generate .core files
 ulimit -Sc 0
 
-xmessage -center "Hola. Bienvenido al sistema operativo OpenBSD."
+xmessage -center -timeout 5 -default okay " Hola. Bienvenido al sistema operativo OpenBSD. "
 
 # start cwm!
 exec cwm

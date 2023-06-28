@@ -615,11 +615,11 @@ shell/i/.gnumeric
 
 # Microsoft Word Document
 regex/i/\.(do[ct]|wri|docx)$
-	Open=/usr/local/libexec/mc/ext.d/doc.sh open msdoc
-	View=%view{ascii} /usr/local/libexec/mc/ext.d/doc.sh view msdoc
+	Open=(lowriter --nologo %f &)
+	View=(lowriter --view --nologo %f &)
 type/^Microsoft\ Word
-	Open=/usr/local/libexec/mc/ext.d/doc.sh open msdoc
-	View=%view{ascii} /usr/local/libexec/mc/ext.d/doc.sh view msdoc
+	Open=(lowriter --nologo %f &)
+	View=(lowriter --view --nologo %f &)
 
 # RTF document
 shell/i/.rtf
