@@ -23,8 +23,9 @@ gap 0 0 0 0
 #  	---------------------------
 
 autogroup 1 Alacritty
-autogroup 2 org.pwmt.zathura,Zathura
+autogroup 2 mc,mc
 autogroup 3 emacs-28-2,Emacs-28.2
+autogroup 3 org.pwmt.zathura,Zathura
 autogroup 4 audacity,Audacity
 autogroup 4 inkscape,Inkscape
 autogroup 5 kdenlive,kdenlive
@@ -89,12 +90,14 @@ bind-key Print ".local/bin/print"
 bind-key S-Print ".local/bin/printsel"
 bind-key 4S-Print ".local/bin/screencast"
 bind-key 4-f thunar
+bind-key 4S-f ".cargo/bin/alacritty --class mc --config-file .config/alacritty/alacritty.yml -e mc"
 bind-key 4-m ".cargo/bin/alacritty -e cmixer"
 bind-key 4-w "firefox-esr -P leandrus"
 bind-key 4S-w "firefox-esr -P norm"
 bind-key 4-e "emacsclient -c"
 bind-key 4-t ".cargo/bin/alacritty -e top"
 bind-key 4S-o ".local/bin/rep"
+bind-key 4-i "xmessage -center -default okay -file .config/bienvenido"
 
 # Menu Aplicaciones
 #----------------------
