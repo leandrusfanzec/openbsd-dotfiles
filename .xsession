@@ -40,8 +40,6 @@ ulimit -Sc 0
 
 xmessage -center -timeout 5 -default okay " Hola. Bienvenido al sistema operativo OpenBSD. "
 
-# xmessage -center -default okay -file $HOME/.config/bienvenido
-
 # start cwm!
 exec cwm
 

@@ -1,0 +1,39 @@
+Hola!							       _____      
+							     \-     -/    OpenBSD
+							  \_/         \   
+							  |        O O |  
+							  |_  <   )  3 )  
+							  / \         /   
+							     /-_____-\    
+
+Este mensaje puede ser accedido presionando: Super + i
+
+- Atajos:
+
+|-------------------------------+-----------------------------------------------------|
+| ATAJOS                        | ACCION                                              |
+|-------------------------------+-----------------------------------------------------|
+| Ctrl + Meta + Enter (return)  | Abre Terminal                                       |
+| Super + Shift + f             | Abre Midnight Commander                             |
+| Super + f                     | Abre Thunar                                         |
+| Alt + Tab                     | Cambia de ventana                                   |
+| Super (windows) + ("h" o "l") | Cambia de escritorio izquierda/derecha              |
+| Ctrl + Meta (alt) + m         | Ocupa escritorio completo                           |
+| Ctrl + Meta + f               | Maximiza ventana                                    |
+| Ctrl + Meta + =               | Máximo vertical ventana                             |
+| Ctrl + Meta + Shift + =       | Máximo horizontal ventana                           |
+| Super + p                     | Menu (Ctrl + a: Muestra todas opciones, Esc: salir) |
+|-------------------------------+-----------------------------------------------------|
+
+- Al pasar entre escritorios las ventanas se organizan asi:
+
+		  	* [1] = Terminal/Alacritty
+		  	* [2] = Explorar Archivos/Midnight Commander
+		  	* [3] = Editor de Texto, Lector Pdf/Emacs,Zathura
+		  	* [4] = Audacity,Inkscape
+		  	* [5] = Kdenlive,Thunar
+		  	* [7] = Buscar Multimedia/Ytfzf
+		  	* [8] = Contenido Audiovisual/Mpv
+		  	* [9] = Navegador Web/Firefox
+
+- Para salir presione Enter.
