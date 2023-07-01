@@ -253,6 +253,7 @@ webkitgtk41-2.38.5  GTK+ port of the WebKit (4.1) rendering engine
 woff2-1.0.2p0       Web Open Font Format 2.0 library
 x264-20221028p0     free H.264/MPEG-4 AVC encoder
 x265-3.5p1          free H.265/HEVC encoder
+xclip-0.13p1        command line interface to X selections
 xdg-utils-1.1.3.20210805p0 utilities to assist desktop integration tasks
 xfce4-panel-4.18.2  Xfce4 desktop panel
 xfconf-4.18.0       Xfce4 settings daemon
