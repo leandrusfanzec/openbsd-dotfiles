@@ -1,6 +1,9 @@
 #!/bin/sh
 # Uso: cambia tema para dark
 
+in=$(pgrep cwm)
+
+m=$(pgrep mc)
 
 sed -i -e "s/github_light/monokai_charcoal/" $HOME/.config/alacritty/alacritty.yml ;
 
@@ -12,9 +15,9 @@ sed -i -e "s/#set recolor true/set recolor true/" $HOME/.config/zathura/zathurar
 
 sed -i -e "s/Arc-solid/Arc-Dark-solid/" $HOME/.config/gtk-3.0/settings.ini ;
 
-pkill -SIGHUP -a  mc ;
+kill -SIGHUP $m ;
 
 sed -i -e "s/sand256/modarin256root-defbg/" $HOME/.config/mc/ini ;
 
-pkill -SIGHUP -a  cwm
+kill -SIGHUP $in
 

@@ -1,6 +1,10 @@
 #!/bin/sh
-# Uso: cambia tema
-# TODO: falta incluir thunar
+# Uso: cambia tema a light
+
+
+in=$(pgrep cwm)
+
+m=$(pgrep mc)
 
 sed -i -e "s/monokai_charcoal/github_light/" $HOME/.config/alacritty/alacritty.yml ;
 
@@ -12,10 +16,10 @@ sed -i -e "s/set recolor true/#set recolor true/" $HOME/.config/zathura/zathurar
 
 sed -i -e "s/Arc-Dark-solid/Arc-solid/" $HOME/.config/gtk-3.0/settings.ini ;
 
-pkill -SIGHUP -a  mc ;
+kill -SIGHUP $m ;
 
 sed -i -e "s/modarin256root-defbg/sand256/" $HOME/.config/mc/ini ;
 
-pkill -SIGHUP -a cwm
+kill -SIGHUP $in
 
 

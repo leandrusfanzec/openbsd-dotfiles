@@ -11,7 +11,7 @@ xsetroot -bitmap $HOME/.config/athemes/bitN ;
 
 sed -i -e "s/000000/ffffff/" $HOME/.cwmrc ;
 
-sed -i -e "s/#set recolor true/set recolor true/" $HOME/.config/zathura/zathurarc ;
+sed -i -e "s/.*#set recolor true/set recolor true/" $HOME/.config/zathura/zathurarc ;
 
 sed -i -e "s/Arc-solid/Arc-Dark-solid/" $HOME/.config/gtk-3.0/settings.ini ;
 
