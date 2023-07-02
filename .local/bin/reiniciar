@@ -10,6 +10,6 @@ sed -i -e "s/Arc-Dark-solid/Arc-solid/" $HOME/.config/gtk-3.0/settings.ini ;
 
 sed -i -e "s/modarin256root-defbg/sand256/" $HOME/.config/mc/ini ;
 
-xmessage -center -timeout 4 -default okay " El equipo se apagara en 5 segundos. Hasta pronto! " ;
+xmessage -center -timeout 4 -default okay -file $HOME/.config/adios ;
 
 doas reboot
