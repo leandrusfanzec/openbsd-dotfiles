@@ -98,6 +98,7 @@ bind-key 4-e "emacsclient -c"
 bind-key 4-t ".cargo/bin/alacritty -e top"
 bind-key 4S-o ".local/bin/rep"
 bind-key 4-i "xmessage -center -default okay -file .config/bienvenido"
+bind-key 4S-i "zathura --fork .config/bienvenido.pdf"
 
 # Menu Aplicaciones
 #----------------------

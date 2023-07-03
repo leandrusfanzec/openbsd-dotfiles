@@ -6,11 +6,11 @@
   							  / \         /   
   							     /-_____-\    
   - Atajos:
-  
   |-------------------------------+-----------------------------------------------------|
   | ATAJOS                        | ACCION                                              |
   |-------------------------------+-----------------------------------------------------|
-  | Super + i			  | Abre esta ventana                                   |
+  | Ctrl + i                      | Abre Mensaje de Bienvenida                          |
+  | Ctrl + Shift + i              | Abre Manual (Leeme)                                 |
   | Ctrl + Meta + Enter (return)  | Abre Terminal                                       |
   | Super + Shift + f             | Abre Midnight Commander                             |
   | Super + f                     | Abre Thunar                                         |
@@ -24,7 +24,6 @@
   |-------------------------------+-----------------------------------------------------|
   
   - Al pasar entre escritorios las ventanas se organizan asi:
-  
   		  	* [1] = Terminal/Alacritty
   		  	* [2] = Explorar Archivos/Midnight Commander
   		  	* [3] = Editor de Texto, Lector Pdf/Emacs,Zathura
@@ -33,5 +32,4 @@
   		  	* [7] = Buscar Multimedia/Ytfzf
   		  	* [8] = Contenido Audiovisual/Mpv
   		  	* [9] = Navegador Web/Firefox
-  
   - Para salir presione Enter.
