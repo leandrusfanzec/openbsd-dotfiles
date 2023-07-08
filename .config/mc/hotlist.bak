@@ -4,3 +4,5 @@ ENTRY "/home/leandrus/.src/openbsd-dotfiles" URL "/home/leandrus/.src/openbsd-do
 ENTRY "/home/leandrus/Downloads" URL "/home/leandrus/Downloads"
 ENTRY "/home/leandrus/Public/docs/libros" URL "/home/leandrus/Public/docs/libros"
 ENTRY "/home/leandrus/Videos" URL "/home/leandrus/Videos"
+ENTRY "/home/leandrus/Public/img/os" URL "/home/leandrus/Public/img/os"
+ENTRY "/home/leandrus/Public/docs/files/trabajo/causas" URL "/home/leandrus/Public/docs/files/trabajo/causas"

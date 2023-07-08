@@ -1,5 +1,6 @@
 # use UTF-8 everywhere
 export es_CH.UTF-8
+export LC_CTYPE=en_US.UTF-8
 
 # specify location of kshrc
 export ENV=$HOME/.kshrc
@@ -12,7 +13,7 @@ xsetroot -bitmap ~/.config/athemes/bitD
 
 # sadly, xclock has a bug where the font selection is ignored when UTF-8
 # is enabled, so we unset LANG here.
-LANG= xclock -strftime "%a %e %b %Y %H:%M" &
+xclock &
 
 # disable system beep
 xset b off

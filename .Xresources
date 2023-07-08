@@ -9,7 +9,7 @@ Xft.rgba      : rgb
 *font         : Cascadia Code PL:size=14
 
 ! ===== xclock
-! digital clock in lower right-hand corner
+digital clock in lower right-hand corner
 XClock*analog      : false
 XClock*twentyfour  : true
 XClock*padding     : 0
