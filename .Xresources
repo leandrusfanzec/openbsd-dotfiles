@@ -9,14 +9,14 @@ Xft.rgba      : rgb
 *font         : Cascadia Code PL:size=14
 
 ! ===== xclock
-digital clock in lower right-hand corner
-XClock*analog      : false
-XClock*twentyfour  : true
-XClock*padding     : 0
-XClock*geometry    : -2-2
+! digital clock in lower right-hand corner
+XClock*analog      : true
+XClock*twentyfour  : false
+XClock*padding     : 1
+!XClock*geometry    : -2-2
 XClock*render      : false
 XClock*font        : -misc-fixed-bold-r-normal-*-13-*-*-*-*-*-iso10646-1
-XClock*height      : 12
+!XClock*height      : 12
 XClock*background  : white
 XClock*foreground  : black
-XClock*borderWidth : 0
+XClock*borderWidth : 1
