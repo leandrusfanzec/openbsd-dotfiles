@@ -9,6 +9,8 @@ Configuración mínima con cwm.
 Se trata de una configuración que busca alterar en lo mínimo la experiencia nativa del sistema, dando preeminencia a las herramientas que se
 encuentran en el repositorio oficial de OpenBSD.
 
+La barra superior es el proyecto [Termbar](https://github.com/vetelko/termbar/tree/master).
+
 # Instalación
 
 Para la instalación mayoritariamente se debe seguir las indicaciones que
