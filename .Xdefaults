@@ -5,7 +5,7 @@ XTerm*loginShell:true
 !XTerm.vt100.reverseVideo: true
 XTerm*borderWidth    : 0
 XTerm*internalBorder : 4
-!XTerm*cursorBlink    : true
+XTerm*cursorBlink    : true
 
 *VT100*translations:      #override \n\
 		Ctrl <Key> +:       larger-vt-font() \n\
@@ -15,11 +15,6 @@ XTerm*internalBorder : 4
 !double-click to select whole URLs :D
 xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
-! Dont automatically jump to the bottom on output, but do on keypress.
-XTerm*scrollTtyOutput:          false
-XTerm*eightBitInput:            false
-XTerm*cursorBlink:              true
-
 ! Tone down the Xaw3D effect.
 XTerm*shapeStyle:               Rectangle
 XTerm*beNiceToColormap:         false
@@ -28,6 +23,10 @@ XTerm*highlightThickness:       0
 
 ! Only select text, not empty space around it.
 XTerm*highlightSelection:       true
+
+! Give me back Alt
+XTerm*eightBitInput:   false
+XTerm*eightBitOutput:  true
 
 ! The border around elements.
 XTerm*.BorderColor:             #ffffff

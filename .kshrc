@@ -2,9 +2,10 @@ PATH=$PATH:/home/lucas/.local/bin
 export PATH
 HISTFILE=$HOME/.ksh_history
 HISTSIZE=20000
+export BIB=/home/lucas/Public/docs/recursos/bib.bib
+
 
 alias za='zathura --fork'
-alias xli='xloadimage -zoom 50%'
 alias ls='ls -F'
 alias ll='ls -l'
 alias la='ls -lA'
