@@ -17,8 +17,6 @@ xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation" 1
 xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Button" 2
 xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Axes" 6 7 4 5
 
-ulimit -Sc 0
-
 xterm -geometry 320x1+0+0 -fa "Hack:size=7" -bg "grey" \
 	      -fg black -fs 11 -name termbar -class termbar \
 	      -T termbar -e ~/.local/bin/termbar &

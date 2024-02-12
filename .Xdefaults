@@ -1,15 +1,7 @@
-!#include "/home/lucas/.src/xresources/Xresources.light"
-!#include "/home/lucas/.src/xresources/Xresources.dark"
-
-
-XTerm*perl-ext-common: urxvt-colors
-XTerm*perl-lib: .local/share/xterm.colors
-XTerm*keysym.F12: perl:urxvt-colors:
-
 XTerm*loginShell:true
 xterm*dynamicColors: true
 
-*.font: xft:Cascadia Code PL:size=8
+*.font: xft: Cascadia Code PL:size=8
 
 !XTerm.vt100.reverseVideo: true
 XTerm*borderWidth    : 0
