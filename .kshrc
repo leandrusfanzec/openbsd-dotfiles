@@ -5,6 +5,8 @@ HISTSIZE=20000
 export BIB=/home/lucas/Public/docs/recursos/bib.bib
 
 
+alias sf='nvim $(find . -type f | fzf)'
+alias sd='cd ~ && cd $(find . -type d | fzf)'
 alias za='zathura --fork'
 alias ls='ls -F'
 alias ll='ls -l'

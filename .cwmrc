@@ -1,10 +1,11 @@
 # Sun Feb 11
+
+command lock '/usr/X11R6/bin/xlock -mode matrix'
+
 gap 20 0 0 0
 
 ignore	termbar
-
 fontname "Hack:pixelsize=12"
-
 bind-key Print ".local/bin/print"
 bind-key S-Print ".local/bin/printsel"
 bind-key 4S-Print ".local/bin/screencast"
