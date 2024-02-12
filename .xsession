@@ -8,7 +8,7 @@ syncthing --no-browser &
 setxkbmap -layout us -variant intl -option ctrl:nocaps
 xcape -e 'Control_L=Escape'
 
-xsetroot -mod 16 16 -bg "#112233" -fg "#552211"
+xsetroot -mod 16 16 -bg "#112233" -fg "#002b36"
 xrdb -merge $HOME/.Xdefaults
 
 # if you have a ThinkPad, the following lines enable TrackPoint

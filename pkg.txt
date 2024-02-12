@@ -76,7 +76,6 @@ json-glib-1.6.6p1   JSON parser for GLib-based libraries and applications
 lame-3.100p1        lame ain't an MP3 encoder
 lcdf-typetools-2.108p0 tools to manipulate font files
 lcms2-2.15          color management library
-lf-27               terminal file manager inspired by ranger written in Go
 libass-0.17.1       portable ASS/SSA subtitle renderer
 libde265-1.0.8      open H.265 video codec implementation
 libevent-2.1.12p0   event notification library

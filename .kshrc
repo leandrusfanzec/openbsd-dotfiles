@@ -30,3 +30,5 @@ function fzf-histo {
 }
 
 bind -m ^R=fzf-histo^J
+
+dynamic-colors i
