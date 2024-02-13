@@ -1,5 +1,4 @@
 XTerm*loginShell:true
-xterm*dynamicColors: true
 
 *.font: xft: Cascadia Code PL:size=8
 
@@ -37,3 +36,28 @@ XTerm*BorderWidth:              3
 ! Trim vertical padding around the toolbar, all elements have a form.
 XTerm*Form.menubar.vSpace:      0
 XTerm*Form.menubar.vertDistance: 0
+
+! Configuración de colores para xterm
+
+xterm*background: #112233
+xterm*foreground: #D4D4D4
+xterm*cursorColor: #D4D4D4
+
+! Colores de la paleta
+
+xterm*color0: #112233
+xterm*color1: #FF5555
+xterm*color2: #50FA7B
+xterm*color3: #F1FA8C
+xterm*color4: #BD93F9
+xterm*color5: #FF79C6
+xterm*color6: #8BE9FD
+xterm*color7: #D4D4D4
+xterm*color8: #6272A4
+xterm*color9: #FF6E6E
+xterm*color10: #69FF94
+xterm*color11: #FFFFA5
+xterm*color12: #D6ACFF
+xterm*color13: #FF92DF
+xterm*color14: #A4FFFF
+xterm*color15: #FFFFFF

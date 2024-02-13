@@ -22,6 +22,7 @@ set go=a
 set mouse=a
 set nohlsearch
 set clipboard+=unnamedplus
+set nowrap
 
 " Some basics:
 nnoremap c "_c
