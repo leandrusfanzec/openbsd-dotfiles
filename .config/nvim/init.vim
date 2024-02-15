@@ -22,7 +22,6 @@ set go=a
 set mouse=a
 set nohlsearch
 set clipboard+=unnamedplus
-set nowrap
 
 " Some basics:
 nnoremap c "_c
@@ -37,6 +36,9 @@ set wildmode=longest,list,full
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Perform dot commands over visual blocks:
 vnoremap . :normal .<CR>
+
+" Wrap
+map <leader>w :set nowrap<CR>
 " Goyo plugin makes text more readable when writing prose:
 map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
 " Spell-check set to <leader>o, 'o' for 'orthography':
@@ -75,9 +77,9 @@ map <leader>c :w! \| !compiler "%:p"<CR>
 map <leader>p :!opout "%:p"<CR>
 
 " Turns off highlighting on the bits of code that are changed, so the line that is changed is highlighted but the actual text that has changed stands out on the line and is readable.
-if &diff
-	highlight! link DiffText MatchParen
-endif
+"if &diff
+"	highlight! link DiffText MatchParen
+"endif
 
 lua << EOF
 require("nvim-treesitter.configs").setup({

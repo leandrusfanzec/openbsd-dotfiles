@@ -37,7 +37,7 @@ XTerm*BorderWidth:              3
 XTerm*Form.menubar.vSpace:      0
 XTerm*Form.menubar.vertDistance: 0
 
-! Configuración de colores para xterm
+! Theme
 
 xterm*background: #112233
 xterm*foreground: #D4D4D4
