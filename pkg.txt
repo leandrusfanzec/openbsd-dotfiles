@@ -3,11 +3,9 @@ R--
 aspell-es--
 cascadia-code--
 ffmpeg--
-fzf--
 git--
 hack-fonts--
 mono--
-neovim--
 pandoc--
 py-pip--
 py3-pip--
@@ -16,6 +14,7 @@ quirks--
 redshift--
 syncthing--
 ungoogled-chromium--
+vim--no_x11
 xcape--
 xclip--
 xloadimage--

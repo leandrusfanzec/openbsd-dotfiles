@@ -4,11 +4,6 @@ HISTFILE=$HOME/.ksh_history
 HISTSIZE=20000
 export BIB=/home/lucas/Public/docs/recursos/bib.bib
 
-
-alias zf='za $(fzf)'
-alias sf='nvim $(find . -type f | fzf)'
-alias sd='cd ~ && cd $(find . -type d | fzf)'
-alias za='zathura --fork'
 alias ls='ls -F'
 alias ll='ls -l'
 alias la='ls -lA'
@@ -25,11 +20,3 @@ case "$(id -u)" in
 	*) _PS1_COLOR='\[\033[32m\]'   ;;
 esac
 PS1='$_XTERM_TITLE\A $_PS1_COLOR\u@\h$_PS1_CLEAR:$_PS1_BLUE\w$_PS1_COLOR\$$_PS1_CLEAR '
-
-function fzf-histo {
-    RES=$(fzf --tac --no-sort -e < $HISTFILE)
-    test -n "$RES" || exit 0
-    eval "$RES"
-}
-
-bind -m ^R=fzf-histo^J
