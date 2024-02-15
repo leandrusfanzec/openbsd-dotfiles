@@ -19,4 +19,4 @@ ungoogled-chromium--
 xcape--
 xclip--
 xloadimage--
-zathura-pdf-poppler--
+xpdf--
