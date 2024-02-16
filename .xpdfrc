@@ -1,5 +1,0 @@
-urlCommand "ungoogled-chromium -remote %s"
-continuousView yes
-bind ctrl-t any toggleOutline
-
-

@@ -2,7 +2,6 @@ ImageMagick--
 R--
 aspell-es--
 cascadia-code--
-evince--light
 ffmpeg--
 git--
 hack-fonts--
